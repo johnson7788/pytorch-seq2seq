@@ -1,30 +1,25 @@
 # PyTorch Seq2Seq
 pytorch和seq2seq模型使用,[PyTorch](https://github.com/pytorch/pytorch) 1.3 and [TorchText](https://github.com/pytorch/text) 0.4 using Python 3.7.
 
-**If you find any mistakes or disagree with any of the explanations, please do not hesitate to [submit an issue](https://github.com/bentrevett/pytorch-seq2seq/issues/new). I welcome any feedback, positive or negative!**
-
 ## Getting Started
 
-To install PyTorch, see installation instructions on the [PyTorch website](pytorch.org).
-
-To install TorchText:
-
+安装torchtext,专门用于自然语言处理的
 ``` bash
 pip install torchtext
 ```
 
-We'll also make use of spaCy to tokenize our data. To install spaCy, follow the instructions [here](https://spacy.io/usage/) making sure to install both the English and German models with:
+https://spacy.io/usage/,安装spaCy用于tokenize，文字向量化
 
 ``` bash
+pip install spacy
 python -m spacy download en
 python -m spacy download de
 ```
 
 ## Tutorials
 
-* 1 - [Sequence to Sequence Learning with Neural Networks](https://github.com/bentrevett/pytorch-seq2seq/blob/master/1%20-%20Sequence%20to%20Sequence%20Learning%20with%20Neural%20Networks.ipynb)
-
-    This first tutorial covers the workflow of a PyTorch with TorchText seq2seq project. We'll cover the basics of seq2seq networks using encoder-decoder models, how to implement these models in PyTorch, and how to use TorchText to do all of the heavy lifting with regards to text processing. The model itself will be based off an implementation of [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215), which uses multi-layer LSTMs.
+* 1 - seq2seq神经网络
+  TorchText,multi-layer LSTMs多层的LSTM实现encoder-decoder
 
 * 2 - [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation](https://github.com/bentrevett/pytorch-seq2seq/blob/master/2%20-%20Learning%20Phrase%20Representations%20using%20RNN%20Encoder-Decoder%20for%20Statistical%20Machine%20Translation.ipynb)
 
